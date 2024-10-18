@@ -3,4 +3,3 @@ pandas
 requests
 scikit-learn
 numpy
-sqlite3
