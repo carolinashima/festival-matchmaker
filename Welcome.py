@@ -1,12 +1,6 @@
-from cmath import nan
 import streamlit as st
 import pandas as pd
-from bs4 import BeautifulSoup
-from urllib.request import urlopen
 import requests
-from math import sqrt
-from math import exp
-from collections import defaultdict
 import pickle
 import numpy as np
 import sqlite3
