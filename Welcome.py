@@ -29,13 +29,28 @@ Which festival should I go to? :thinking_face:
 """)
 
 st.write("""
-    Every year, the same problem: too many festivals, too little time (and money!).
-    This little app was built to help me choose which festival to go to 
-    according to how well their lineups match my taste.
+    Every year I have the same problem: too many festivals, too little time (and money!).
+    I built this little app to help me choose which festival to go to 
+    according to how well their lineups match [my taste](https://www.last.fm/user/caro_g), instead of
+    sitting for hours checking out each individual artist in a lineup. I mean, I probably will still do that, but
+    at least I will know what to check out first!
+
+    You can find the repo for this app and a couple of notebooks [here]("https://github.com/carolinashima/festival-matchmaker").
     """
-    # write more about how I did this!
 )
 
+st.subheader("Some caveats")
+st.write("""
+    * My user profile was built with my top 150 artists, which I think is representative of my general taste in music
+    but is also biased against post-rock, for example.
+    * Artist similarity was calculated by retrieving tags on Last.fm, so: 1) I wasn't able to calculate similarity for
+    very small artists that haven't been scrobbled; 2) tags are added manually by users, so a bunch of them are either not
+    related to genre or are sometimes just [weird/funny]("https://www.last.fm/tag/if+this+were+a+pokemon+i+would+catch+it").
+    * Artists with special characters (e.g. &) were not processed correctly with the Last.fm API so I have no similarity scores
+    for them either.
+    * The 40 festivals were chosen manually by looking at Setlist.fm's lists of festivals in 2024. Partly because I had to
+    scrape them and partly because I'm probably not interested in attending most festivals that exist in the world.
+""")
 
 # load festival summary
 with open('festival_summary.pkl', 'rb') as f:
