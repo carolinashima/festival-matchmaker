@@ -52,7 +52,7 @@ st.write("""
     scrape them and partly because I'm probably not interested in attending most festivals that exist in the world.
 """)
 
-st.subheader("Future directions/to do")
+st.subheader("Future improvements/to do")
 st.write("""
     * I suspect that scores would be more accurate if I was using genre information that is not based on user generated tags,
     or if I spent more time filtering useless ones (e.g. "seen live").
