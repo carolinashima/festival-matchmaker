@@ -15,4 +15,20 @@ Made by Carolina L. Shimabukuro
 
 # page content
 st.title("About me 👩🏻‍💻")
-st.write("Hi! :wave: I'm Carolina.")
+col1, col2 = st.columns([0.6, 0.4], gap = "small")
+
+linktree_url = "https://linktr.ee/carolinashima"
+with col1:
+    st.write("""
+    Hi! :wave: I'm Carolina.
+    
+    I'm originally from Buenos Aires, Argentina, but currently based in Berlin, Germany.
+    I love music and traveling but most of all traveling to some concert: hence this little project!
+    (Although to be fair most of the time I just go to the UK to see Liam Gallagher 😅)
+
+    If you have any feedback or comments feel free to [contact me]("https://linktr.ee/carolinashima").
+    """)
+
+with col2:
+    st.image("https://scontent-ber1-1.xx.fbcdn.net/v/t31.18172-8/11402649_10152781539971577_3970513956185831025_o.jpg?_nc_cat=105&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=q-s2ya4eSlEQ7kNvgEG8JS7&_nc_zt=23&_nc_ht=scontent-ber1-1.xx&_nc_gid=AzLYsVU6hnUnua-AT8ySfnz&oh=00_AYCX6HEiLYxC6AlwXxSPdg-TDLe1jXbJQ8oh_Rcgbawv3Q&oe=673C7DD5",
+    "My doggie Apolo and I, Buenos Aires, Argentina, May 2015", width=300)
