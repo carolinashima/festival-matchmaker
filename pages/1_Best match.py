@@ -26,7 +26,6 @@ sorted_df.set_index("Rank", inplace = True)
 # winner!
 winner = sorted_df.iloc[0]["festi_name"]
 
-
 # display
 st.write(f":tada: The winner is...")
 font_size = 50
@@ -40,8 +39,8 @@ p.a {{
 """
 st.markdown(html_str, unsafe_allow_html=True)
 st.write("""
-Let's take a look at the festival rankings.
-The winner is the one with the highest **median** score.
+    Let's take a look at the festival rankings.
+    The winner is the one with the highest **median** score.
 """)
 # display table
 st.dataframe(sorted_df,
