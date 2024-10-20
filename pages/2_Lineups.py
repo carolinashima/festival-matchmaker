@@ -61,8 +61,10 @@ if selected_festival:
         "final_score": "Final score"
     },hide_index=True)
 
-# new
-#sorted_df["Rank"] = range(1, len(sorted_df) + 1)
-#sorted_df.set_index("Rank", inplace = True)
+st.write("""
+    **Note**: some artists appear more than once because they're playing the same festival on different dates.
+    Normalised scrobbles represent an artist's percentage of my total number of scrobbles.
+    A score of 1 = OMG I should marry this artist, and 0 = get this thing out of my face.
+""")
 
 
