@@ -35,7 +35,7 @@ st.write("""
     sitting for hours checking out each individual artist in a lineup. I mean, I probably will still do that, but
     at least I will know what to check out first!
 
-    You can find the repo for this app and a couple of notebooks [here]("https://github.com/carolinashima/festival-matchmaker").
+    You can find the repo for this app and a couple of notebooks [here](https://github.com/carolinashima/festival-matchmaker).
     """
 )
 
@@ -45,7 +45,7 @@ st.write("""
     but is also biased against post-rock, for example.
     * Artist similarity was calculated by retrieving tags on Last.fm, so: 1) I wasn't able to calculate similarity for
     very small artists that haven't been scrobbled; 2) tags are added manually by users, so a bunch of them are either not
-    related to genre or are sometimes just [weird/funny]("https://www.last.fm/tag/if+this+were+a+pokemon+i+would+catch+it").
+    related to genre or are sometimes just [weird/funny](https://www.last.fm/tag/if+this+were+a+pokemon+i+would+catch+it).
     * Artists with special characters (e.g. &) were not processed correctly with the Last.fm API so I have no similarity scores
     for them either.
     * The 40 festivals were chosen manually by looking at Setlist.fm's lists of festivals in 2024. Partly because I had to
