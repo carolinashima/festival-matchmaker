@@ -55,7 +55,7 @@ st.write("""
 st.subheader("Future directions/to do")
 st.write("""
     * I suspect that scores would be more accurate if I was using genre information that is not based on user generated tags,
-    or if I spent more time filtering useless ones (i.e. "seen live").
+    or if I spent more time filtering useless ones (e.g. "seen live").
     * Ideally this could be expanded and applied to any person with *some* music data (e.g. streaming services) and any
     event (unfortunately Songkick's API is not available anymore so if you know of any alternative, please let me know).
 """)
