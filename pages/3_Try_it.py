@@ -40,8 +40,9 @@ username = st.text_input("Enter Last.fm username", value = 'caro_g')
 default_url = 'https://www.setlist.fm/festival/2025/primavera-sound-2025-bd5898e.html'
 festi_url = st.text_input("Enter Setlist.fm festival link", value = default_url)
 
-load_dotenv()
-API_KEY = os.getenv('API_KEY')
+#load_dotenv()
+#API_KEY = os.getenv('API_KEY')
+API_KEY = st.secrets["API_KEY"]
 
 library_artists_features = dict()
 #n_top_artists = 50 # arbitrary number of artists to build profile
