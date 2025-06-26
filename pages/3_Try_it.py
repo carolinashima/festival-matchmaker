@@ -49,7 +49,7 @@ library_artists_features = dict()
 
 url = f'http://ws.audioscrobbler.com/2.0/?method=user.getTopArtists&user={username}&api_key={API_KEY}&format=json&limit=20'
 
-with st.spinner("Calculating scores... :sleeping:"):
+with st.spinner("Calculating scores... (this might take some time :sleeping:)"):
     # get top artists from last.fm
     try:
         response = requests.get(url)
@@ -136,8 +136,13 @@ with st.spinner("Calculating scores... :sleeping:"):
             lineup.append(a)
         
         # get general data like dates, venue, etc.
-        date_strong = soupified.find('strong', class_='value')
-        date_text = date_strong.get_text().strip() # format example: Wednesday, August 21, 2024 - Sunday, August 25, 2024
+        date_div = soupified.find('div', class_='festivalContent')
+        if date_div:
+            for span in date_div.find_all('span'):
+                text = span.get_text().strip()
+                if ' - ' in text and ',' in text: # format example: Wednesday, August 21, 2024 - Sunday, August 25, 2024
+                    date_text = text
+                    break
         
         # venue
         venue_tag = soupified.find('h2', class_='Text-root Text-root_variant-display2 Text-root_color-grayDark')
