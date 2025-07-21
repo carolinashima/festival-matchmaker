@@ -25,7 +25,7 @@ Festival Matchmaker 🤘!
 """)
 
 st.subheader("""
-Which festival should I go to? :thinking_face:
+Which festival should I go to? 🤔
 """)
 
 st.write("""
